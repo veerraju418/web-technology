@@ -1,0 +1,2 @@
+1. demonstrate a javascript function for any two different objects
+2. explain about event handling with an example
