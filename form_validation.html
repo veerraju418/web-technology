@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>JS</title>
+	<script type="text/javascript">
+		function validate(){
+		var name=document.frm.name.value;
+		var password=document.frm.pass.value;
+		var mobile=document.frm.mobile.value;
+		var email=document.frm.email.value;
+		if(name==""||name==null)
+		{
+			alert("name should not be null");
+			return false;
+		}
+		else if(password.length<8){
+			alert("length of password more than 8");
+			return false;
+		}
+		else if(mobile.toString.length!=10){
+			alert("mobile number should be 10");
+		}
+	}
+	</script>
+
+</head>
+<body>
+	<center>
+	<form name="frm" method="post" onsubmit="return validate()">
+		Name:
+		<input type="text" name="name">
+		<br>
+		<br>
+		Password:
+		<input type="Password" name="pass">
+		<br>
+		<br>
+		Mobile:
+		<input type="tel" name="mobile">
+		<br>
+		<br>
+		Email:
+		<input type="Email" name="email">
+		<br>
+		<br>
+		<br>
+		<input type="submit" name="">
+	</form>
+</center>
+
+</body>
+</html>
